@@ -1,0 +1,41 @@
+# Configuración para GitHub Pages
+title: "Georg Wilhelm Friedrich Hegel - Filósofo del Idealismo Alemán"
+description: "Página académica completa sobre la vida, obra y pensamiento de Georg Wilhelm Friedrich Hegel (1770-1831)"
+author: "Proyecto Académico Hegel"
+keywords: "Hegel, filosofía, idealismo alemán, dialéctica, fenomenología, filosofía del derecho"
+
+# GitHub Pages configuración
+github:
+  repository_name: "hegel-filosofo"
+  
+# SEO y metadata
+lang: es
+locale: es_ES
+
+# Configuración de Jekyll (aunque usamos HTML estático)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Excluir archivos del build
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - "*.md"
+  - node_modules
+  - package*.json
+
+# Configuración para redes sociales
+social:
+  type: WebSite
+  name: "Hegel - Filósofo del Idealismo Alemán"
+  
+# Google Analytics (opcional - añadir ID si se necesita)
+# google_analytics: "G-XXXXXXXXXX"
+
+# Configuración de encoding
+encoding: utf-8
+
+# Timezone
+timezone: Europe/Madrid
