@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenomenología del Espíritu (1807) - El Viaje de la Conciencia | Hegel</title>
+    <meta name="description" content="Análisis académico completo de la Fenomenología del Espíritu de Hegel: estructura dialéctica, conceptos clave, interpretaciones contemporáneas y su influencia en la filosofía moderna.">
+    <meta name="keywords" content="Fenomenología del Espíritu, Hegel, dialéctica, autoconciencia, amo-esclavo, reconocimiento, Geist, filosofía alemana, 1807">
+    
+    <style>
+        /* Reset y configuración base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variables CSS */
+        :root {
+            --color-primary: #1e3a8a;
+            --color-secondary: #1e293b;
+            --color-accent: #d97706;
+            --color-text: #374151;
+            --color-light: #f8fafc;
+            --color-white: #ffffff;
+            --color-gray-100: #f1f5f9;
+            --color-gray-200: #e2e8f0;
+            --color-gray-300: #cbd5e1;
+            --color-gray-600: #475569;
+            --color-gray-700: #334155;
+            --color-gray-800: #1e293b;
+            --color-blue-50: #eff6ff;
+            --color-blue-100: #dbeafe;
+            --color-blue-900: #1e3a8a;
+            --color-gold: #f59e0b;
+            --color-emerald: #059669;
+            --color-red: #dc2626;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Tipografía */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-light);
+            font-size: 16px;
+        }
+
+        .font-serif {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .font-playfair {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Layout utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .gap-12 { gap: 3rem; }
+
+        /* Spacing */
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .px-8 { padding-left: 2rem; padding-right: 2rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+        .mt-4 { margin-top: 1rem; }
+        .mt-8 { margin-top: 2rem; }
+        .mt-12 { margin-top: 3rem; }
+        .mt-16 { margin-top: 4rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .mb-16 { margin-bottom: 4rem; }
+
+        /* Text utilities */
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+
+        .text-sm { font-size: 0.875rem; }
+        .text-base { font-size: 1rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-5xl { font-size: 3rem; }
+
+        .font-normal { font-weight: 400; }
+        .font-medium { font-weight: 500; }
+        .font-semibold { font-weight: 600; }
+        .font-bold { font-weight: 700; }
+
+        .italic { font-style: italic; }
+
+        /* Colors */
+        .text-white { color: var(--color-white); }
+        .text-gray-600 { color: var(--color-gray-600); }
+        .text-gray-700 { color: var(--color-gray-700); }
+        .text-gray-800 { color: var(--color-gray-800); }
+        .text-blue-100 { color: var(--color-blue-100); }
+        .text-accent { color: var(--color-accent); }
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .text-gold { color: var(--color-gold); }
+        .text-emerald { color: var(--color-emerald); }
+        .text-red { color: var(--color-red); }
+
+        .bg-white { background-color: var(--color-white); }
+        .bg-gray-50 { background-color: var(--color-gray-100); }
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+
+        /* Components */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background-color: #b45309;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            background-color: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .card {
+            background: var(--color-white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: var(--color-white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--color-gold);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-white);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: var(--color-white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/fenomenologia_libro.jpg') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--color-accent);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            width: 45%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 55%;
+            text-align: left;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            top: 1rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--color-accent);
+            border-radius: 50%;
+            border: 3px solid var(--color-white);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-marker {
+            right: -1.5rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-marker {
+            left: -1.5rem;
+        }
+
+        /* Dialectic Process */
+        .dialectic-process {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-light) 100%);
+            border-radius: 1rem;
+        }
+
+        .dialectic-step {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--color-white);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .dialectic-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .dialectic-arrow {
+            font-size: 2rem;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        /* Levels Navigation */
+        .levels-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .level-card {
+            background: var(--color-white);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .level-card:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .level-card.active {
+            border-color: var(--color-primary);
+            background: var(--color-blue-50);
+        }
+
+        .level-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Concept Cards */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .concept-card {
+            background: var(--color-white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .concept-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+        }
+
+        .concept-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .concept-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-white) 100%);
+            border-left: 4px solid var(--color-accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .quote-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--color-gray-700);
+            margin-bottom: 1rem;
+        }
+
+        .quote-author {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* Schools Grid */
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .school-card {
+            background: var(--color-white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .school-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .school-card.french {
+            border-top: 4px solid var(--color-red);
+        }
+
+        .school-card.analytic {
+            border-top: 4px solid var(--color-primary);
+        }
+
+        .school-card.critical {
+            border-top: 4px solid var(--color-emerald);
+        }
+
+        .school-card.postkantian {
+            border-top: 4px solid var(--color-gold);
+        }
+
+        /* Interactive Elements */
+        .accordion {
+            margin: 1rem 0;
+        }
+
+        .accordion-header {
+            background: var(--color-gray-100);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:hover {
+            background: var(--color-gray-200);
+        }
+
+        .accordion-content {
+            padding: 1rem;
+            background: var(--color-white);
+            border-radius: 0 0 0.5rem 0.5rem;
+            display: none;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .timeline::before {
+                left: 1rem;
+            }
+
+            .timeline-item {
+                width: calc(100% - 3rem);
+                margin-left: 3rem !important;
+                text-align: left !important;
+            }
+
+            .timeline-marker {
+                left: -1.5rem !important;
+            }
+
+            .dialectic-process {
+                flex-direction: column;
+            }
+
+            .dialectic-arrow {
+                transform: rotate(90deg);
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="flex justify-between items-center">
+                <a href="index.html" class="logo">← G.W.F. Hegel</a>
+                <ul class="nav-menu">
+                    <li><a href="#contexto" class="nav-link">Contexto</a></li>
+                    <li><a href="#estructura" class="nav-link">Estructura</a></li>
+                    <li><a href="#conceptos" class="nav-link">Conceptos</a></li>
+                    <li><a href="#interpretaciones" class="nav-link">Interpretaciones</a></li>
+                    <li><a href="#legado" class="nav-link">Legado</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content text-center fade-in-up">
+                <h1 class="hero-title font-playfair">Fenomenología del Espíritu</h1>
+                <p class="hero-subtitle">El Viaje de la Conciencia hacia el Saber Absoluto (1807)</p>
+                <p class="text-xl mb-8 stagger-1">La obra que transformó la filosofía occidental</p>
+                <a href="#contexto" class="btn btn-primary stagger-2">Explora el Recorrido Dialéctico</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexto Histórico -->
+    <section id="contexto" class="py-16">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Contexto Histórico: El Momento de 1807</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="card fade-in-up">
+                    <img src="images/batalla_jena.jpg" alt="Batalla de Jena 1806" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">La Batalla de Jena-Auerstedt (1806)</h3>
+                    <p class="text-gray-700 mb-4">
+                        El 14 de octubre de 1806, Napoleón derrota decisivamente a Prusia, marcando el fin del Sacro Imperio Romano Germánico. Hegel, testigo presencial en Jena, ve en Napoleón al "Espíritu del mundo a caballo".
+                    </p>
+                    <div class="quote-box">
+                        <p class="quote-text">"He visto al Emperador -esta alma del mundo- salir de la ciudad para ir al reconocimiento"</p>
+                        <p class="quote-author">— Hegel a Niethammer, 13 octubre 1806</p>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up stagger-1">
+                    <img src="images/hegel_portrait.jpg" alt="Hegel en Jena" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">Hegel en Jena (1801-1807)</h3>
+                    <p class="text-gray-700 mb-4">
+                        Durante estos años cruciales, Hegel desarrolla su sistema filosófico mientras Europa se transforma. La crisis política e intelectual del mundo tradicional se refleja en su obra más ambiciosa.
+                    </p>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li>Privatdozent en la Universidad de Jena</li>
+                        <li>Colaboración con Schelling hasta 1803</li>
+                        <li>Redacción de la Fenomenología (1805-1806)</li>
+                        <li>Publicación durante la ocupación francesa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Timeline Interactivo -->
+            <h3 class="text-3xl font-semibold text-center mb-8 text-secondary">Timeline: De Kant a Hegel</h3>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold text-primary">1781-1790</h4>
+                        <h5 class="font-semibold mb-2">Kant: El Problema Crítico</h5>
+                        <p class="text-gray-700">Crítica de la Razón Pura establece la división fenómeno/noúmeno. ¿Cómo conocer la "cosa en sí"?</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up stagger-1">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold text-primary">1794-1798</h4>
+                        <h5 class="font-semibold mb-2">Fichte: La Autoconciencia</h5>
+                        <p class="text-gray-700">Doctrina de la Ciencia: el "Yo" como principio absoluto que se auto-pone dialecticamente.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up stagger-2">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold text-primary">1800-1803</h4>
+                        <h5 class="font-semibold mb-2">Schelling: Identidad Absoluta</h5>
+                        <p class="text-gray-700">Sistema del idealismo trascendental: unidad inmediata sujeto-objeto en el Absoluto.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up stagger-3">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold text-primary">1807</h4>
+                        <h5 class="font-semibold mb-2">Hegel: Síntesis Dialéctica</h5>
+                        <p class="text-gray-700">Fenomenología del Espíritu: el desarrollo histórico-conceptual como camino hacia el saber absoluto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estructura de la Obra -->
+    <section id="estructura" class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Estructura Dialéctica: Los Seis Niveles</h2>
+            
+            <div class="levels-nav">
+                <div class="level-card active" data-level="1">
+                    <div class="level-number">1</div>
+                    <h3 class="font-semibold">Conciencia</h3>
+                    <p class="text-sm text-gray-600">Objeto vs Sujeto</p>
+                </div>
+                <div class="level-card" data-level="2">
+                    <div class="level-number">2</div>
+                    <h3 class="font-semibold">Autoconciencia</h3>
+                    <p class="text-sm text-gray-600">Reconocimiento</p>
+                </div>
+                <div class="level-card" data-level="3">
+                    <div class="level-number">3</div>
+                    <h3 class="font-semibold">Razón</h3>
+                    <p class="text-sm text-gray-600">Unidad inicial</p>
+                </div>
+                <div class="level-card" data-level="4">
+                    <div class="level-number">4</div>
+                    <h3 class="font-semibold">Espíritu</h3>
+                    <p class="text-sm text-gray-600">Vida social</p>
+                </div>
+                <div class="level-card" data-level="5">
+                    <div class="level-number">5</div>
+                    <h3 class="font-semibold">Religión</h3>
+                    <p class="text-sm text-gray-600">Representación</p>
+                </div>
+                <div class="level-card" data-level="6">
+                    <div class="level-number">6</div>
+                    <h3 class="font-semibold">Saber Absoluto</h3>
+                    <p class="text-sm text-gray-600">Concepto puro</p>
+                </div>
+            </div>
+
+            <!-- Contenido Detallado por Nivel -->
+            <div id="level-content" class="mt-12">
+                <div class="level-detail active" data-level="1">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 1: Conciencia</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Certeza Sensible</h4>
+                                <p class="text-gray-700">"Este objeto aquí y ahora"</p>
+                                <p class="text-sm text-gray-600 mt-2">El conocimiento más inmediato que se revela como el más abstracto</p>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Percepción</h4>
+                                <p class="text-gray-700">"Las propiedades del objeto"</p>
+                                <p class="text-sm text-gray-600 mt-2">La cosa con múltiples propiedades genera contradicciones</p>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Entendimiento</h4>
+                                <p class="text-gray-700">"Las fuerzas tras las apariencias"</p>
+                                <p class="text-sm text-gray-600 mt-2">La ley como unidad de lo múltiple fenomenal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-detail" data-level="2">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 2: Autoconciencia</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <img src="images/maestro_esclavo.jpg" alt="Dialéctica amo-esclavo" class="w-full h-48 object-cover rounded-lg mb-4">
+                                <h4 class="text-2xl font-semibold mb-3 text-accent">Dialéctica Amo-Esclavo</h4>
+                                <p class="text-gray-700 mb-4">La lucha por el reconocimiento como fundamento de la historia humana.</p>
+                                
+                                <div class="dialectic-process">
+                                    <div class="dialectic-step">
+                                        <h5 class="font-semibold text-red">Lucha</h5>
+                                        <p class="text-sm">A muerte por reconocimiento</p>
+                                    </div>
+                                    <div class="dialectic-arrow">→</div>
+                                    <div class="dialectic-step">
+                                        <h5 class="font-semibold text-primary">Dominio</h5>
+                                        <p class="text-sm">Amo y esclavo emergen</p>
+                                    </div>
+                                    <div class="dialectic-arrow">→</div>
+                                    <div class="dialectic-step">
+                                        <h5 class="font-semibold text-emerald">Inversión</h5>
+                                        <p class="text-sm">El esclavo deviene libre</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <img src="images/autoconciencia.jpg" alt="Conciencia desdichada" class="w-full h-48 object-cover rounded-lg mb-4">
+                                <h4 class="text-2xl font-semibold mb-3 text-accent">Conciencia Desdichada</h4>
+                                <p class="text-gray-700 mb-4">La alienación religiosa como forma de autoconciencia escindida.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                                        <span>Judaísmo: Lo Inmutable Ajeno</span>
+                                        <span class="accordion-icon">▼</span>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p class="text-gray-700">Dios como absolutamente trascendente, inaccesible al hombre finito.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                                        <span>Cristianismo: Encarnación</span>
+                                        <span class="accordion-icon">▼</span>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p class="text-gray-700">Cristo como mediación entre lo finito y lo infinito.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-detail" data-level="3">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 3: Razón</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Razón Observadora</h4>
+                                <p class="text-gray-700 mb-2">"La ciencia de la naturaleza"</p>
+                                <p class="text-sm text-gray-600">La razón busca encontrarse en la naturaleza externa</p>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Razón Activa</h4>
+                                <p class="text-gray-700 mb-2">"La individualidad ética"</p>
+                                <p class="text-sm text-gray-600">Realizar la razón en la acción individual</p>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Individualidad</h4>
+                                <p class="text-gray-700 mb-2">"En y para sí real"</p>
+                                <p class="text-sm text-gray-600">La síntesis de certeza y verdad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-detail" data-level="4">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 4: Espíritu</h3>
+                        <p class="text-lg text-gray-700 mb-6">El Geist como realidad social auto-organizadora y auto-consciente.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="concept-card">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Espíritu Ético</h4>
+                                <p class="text-gray-700">La *polis* griega como unidad inmediata de lo individual y universal. Antígona vs. Creón.</p>
+                            </div>
+                            <div class="concept-card">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Cultura</h4>
+                                <p class="text-gray-700">La alienación moderna: Ilustración, fe, terror revolucionario. El mundo burgués.</p>
+                            </div>
+                            <div class="concept-card">
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Moralidad</h4>
+                                <p class="text-gray-700">La conciencia moral kantiana y sus contradicciones internas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-detail" data-level="5">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 5: Religión</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="concept-card">
+                                <div class="concept-icon">🌿</div>
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Religión Natural</h4>
+                                <p class="text-gray-700">Dioses de la naturaleza: luz, planta, animal. La sustancia spinoziana.</p>
+                            </div>
+                            <div class="concept-card">
+                                <div class="concept-icon">🏛️</div>
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Religión Artística</h4>
+                                <p class="text-gray-700">Los dioses griegos como bella individualidad. Arte como religión.</p>
+                            </div>
+                            <div class="concept-card">
+                                <div class="concept-icon">✝️</div>
+                                <h4 class="text-xl font-semibold mb-3 text-accent">Religión Revelada</h4>
+                                <p class="text-gray-700">El cristianismo como auto-revelación del Espíritu Absoluto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-detail" data-level="6">
+                    <div class="card fade-in-up">
+                        <h3 class="text-3xl font-semibold mb-6 text-primary">Nivel 6: Saber Absoluto</h3>
+                        <div class="text-center mb-8">
+                            <img src="images/espiritu_absoluto.PNG" alt="Saber Absoluto" class="w-full max-w-md mx-auto rounded-lg">
+                        </div>
+                        
+                        <div class="quote-box">
+                            <p class="quote-text">
+                                "El Espíritu que se sabe así desarrollado como Espíritu es la ciencia. Ella es su realidad y el reino que se construye en su propio elemento."
+                            </p>
+                            <p class="quote-author">— Fenomenología del Espíritu, §805</p>
+                        </div>
+                        
+                        <p class="text-lg text-gray-700 text-center">
+                            La filosofía como autocomprensión del Espíritu: el círculo dialéctico se completa cuando la conciencia conoce su propio proceso de desarrollo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conceptos Clave -->
+    <section id="conceptos" class="py-16">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Conceptos Revolucionarios</h2>
+            
+            <div class="concept-grid">
+                <div class="concept-card fade-in-up">
+                    <div class="concept-icon">🔄</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Aufhebung</h3>
+                    <p class="text-gray-700 mb-4">
+                        Negar + Preservar + Elevar = Superación dialéctica. El movimiento fundamental del pensamiento y la realidad.
+                    </p>
+                    <div class="dialectic-process">
+                        <div class="dialectic-step">
+                            <h5 class="font-semibold text-red">Negar</h5>
+                            <p class="text-sm">Destruir la forma anterior</p>
+                        </div>
+                        <div class="dialectic-arrow">+</div>
+                        <div class="dialectic-step">
+                            <h5 class="font-semibold text-primary">Preservar</h5>
+                            <p class="text-sm">Mantener el contenido</p>
+                        </div>
+                        <div class="dialectic-arrow">=</div>
+                        <div class="dialectic-step">
+                            <h5 class="font-semibold text-emerald">Elevar</h5>
+                            <p class="text-sm">Nueva síntesis superior</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="concept-card fade-in-up stagger-1">
+                    <div class="concept-icon">👁️</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Anerkennung</h3>
+                    <p class="text-gray-700 mb-4">
+                        Reconocimiento como fundamento de la subjetividad y la vida social. "La autoconciencia existe sólo como algo reconocido."
+                    </p>
+                    <div class="quote-box">
+                        <p class="quote-text">
+                            "La autoconciencia existe en sí y para sí cuando y porque existe en sí y para sí para otra autoconciencia"
+                        </p>
+                        <p class="quote-author">— Fenomenología §178</p>
+                    </div>
+                </div>
+
+                <div class="concept-card fade-in-up stagger-2">
+                    <div class="concept-icon">🌟</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Geist (Espíritu)</h3>
+                    <p class="text-gray-700 mb-4">
+                        Realidad social auto-organizadora: "Yo que es Nosotros y Nosotros que es Yo". La sustancia devenida sujeto.
+                    </p>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li><strong>Subjetivo:</strong> Conciencia individual</li>
+                        <li><strong>Objetivo:</strong> Instituciones sociales</li>
+                        <li><strong>Absoluto:</strong> Arte, religión, filosofía</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card fade-in-up stagger-3">
+                    <div class="concept-icon">♾️</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Saber Absoluto</h3>
+                    <p class="text-gray-700 mb-4">
+                        Superación de toda separación entre sujeto y objeto, certeza y verdad, forma y contenido.
+                    </p>
+                    <p class="text-gray-700">
+                        No es conocimiento de un objeto absoluto, sino la absolutización del conocimiento mismo como auto-referencia del Espíritu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interpretaciones Académicas -->
+    <section id="interpretaciones" class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Interpretaciones Académicas Contemporáneas</h2>
+            <p class="text-center text-lg text-gray-700 mb-12">Análisis basado en 285+ papers académicos especializados (1950-2024)</p>
+            
+            <div class="schools-grid">
+                <div class="school-card french fade-in-up">
+                    <h3 class="text-2xl font-semibold mb-4 text-red">Escuela Francesa</h3>
+                    <div class="mb-4">
+                        <span class="font-semibold">Principales:</span> Kojève, Hyppolite, Bataille
+                    </div>
+                    <ul class="text-gray-700 list-disc list-inside mb-4">
+                        <li>Énfasis antropológico en la lucha por reconocimiento</li>
+                        <li>Dialéctica amo-esclavo como motor de la historia</li>
+                        <li>Influencia en existencialismo y marxismo francés</li>
+                        <li>Hegel como teórico de la finitud humana</li>
+                    </ul>
+                    <div class="quote-box">
+                        <p class="quote-text">"El hombre es Deseo de reconocimiento"</p>
+                        <p class="quote-author">— Alexandre Kojève</p>
+                    </div>
+                </div>
+
+                <div class="school-card analytic fade-in-up stagger-1">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Escuela Analítica</h3>
+                    <div class="mb-4">
+                        <span class="font-semibold">Principales:</span> McDowell, Brandom, Pippin
+                    </div>
+                    <ul class="text-gray-700 list-disc list-inside mb-4">
+                        <li>Lectura "kantiana" de Hegel sin metafísica</li>
+                        <li>Normatividad conceptual y práctica social</li>
+                        <li>Crítica al representacionalismo</li>
+                        <li>Hegel como filósofo de la racionalidad</li>
+                    </ul>
+                    <div class="quote-box">
+                        <p class="quote-text">"Hegel domestica el mito del Dado"</p>
+                        <p class="quote-author">— John McDowell</p>
+                    </div>
+                </div>
+
+                <div class="school-card critical fade-in-up stagger-2">
+                    <h3 class="text-2xl font-semibold mb-4 text-emerald">Teoría Crítica</h3>
+                    <div class="mb-4">
+                        <span class="font-semibold">Principales:</span> Habermas, Honneth, Fraser
+                    </div>
+                    <ul class="text-gray-700 list-disc list-inside mb-4">
+                        <li>Hegel como teórico de la modernidad</li>
+                        <li>Patologías del reconocimiento social</li>
+                        <li>Crítica social contemporánea</li>
+                        <li>Reconstrucción de la racionalidad comunicativa</li>
+                    </ul>
+                    <div class="quote-box">
+                        <p class="quote-text">"Las luchas por reconocimiento son el motor de la evolución moral"</p>
+                        <p class="quote-author">— Axel Honneth</p>
+                    </div>
+                </div>
+
+                <div class="school-card postkantian fade-in-up stagger-3">
+                    <h3 class="text-2xl font-semibold mb-4 text-gold">Escuela Post-kantiana</h3>
+                    <div class="mb-4">
+                        <span class="font-semibold">Principales:</span> Pippin, Pinkard, Redding
+                    </div>
+                    <ul class="text-gray-700 list-disc list-inside mb-4">
+                        <li>Auto-determinación moderna post-tradicional</li>
+                        <li>Crítica a interpretaciones metafísicas</li>
+                        <li>Hegel como filósofo de la libertad</li>
+                        <li>Normatividad social e institucional</li>
+                    </ul>
+                    <div class="quote-box">
+                        <p class="quote-text">"Hegel es el filósofo de la modernidad que se comprende a sí misma"</p>
+                        <p class="quote-author">— Robert Pippin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Influencia y Legado -->
+    <section id="legado" class="py-16">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Influencia y Legado Contemporáneo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card fade-in-up text-center">
+                    <div class="concept-icon">🏛️</div>
+                    <h3 class="text-xl font-semibold mb-3 text-accent">Filosofía Política</h3>
+                    <ul class="text-sm text-gray-700 list-disc list-inside">
+                        <li>Teorías del reconocimiento multicultural</li>
+                        <li>Política de identidad</li>
+                        <li>Derechos culturales</li>
+                        <li>Democracia deliberativa</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in-up text-center stagger-1">
+                    <div class="concept-icon">🧠</div>
+                    <h3 class="text-xl font-semibold mb-3 text-accent">Psicología Social</h3>
+                    <ul class="text-sm text-gray-700 list-disc list-inside">
+                        <li>Formación de identidad</li>
+                        <li>Dinámicas de grupo</li>
+                        <li>Conflicto y resolución</li>
+                        <li>Desarrollo moral</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in-up text-center stagger-2">
+                    <div class="concept-icon">🌍</div>
+                    <h3 class="text-xl font-semibold mb-3 text-accent">Estudios Culturales</h3>
+                    <ul class="text-sm text-gray-700 list-disc list-inside">
+                        <li>Análisis postcolonial</li>
+                        <li>Teoría de género</li>
+                        <li>Crítica de ideología</li>
+                        <li>Estudios de diáspora</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in-up text-center stagger-3">
+                    <div class="concept-icon">🤖</div>
+                    <h3 class="text-xl font-semibold mb-3 text-accent">Tecnología y Sociedad</h3>
+                    <ul class="text-sm text-gray-700 list-disc list-inside">
+                        <li>Reconocimiento en redes sociales</li>
+                        <li>Inteligencia artificial y conciencia</li>
+                        <li>Ética algorítmica</li>
+                        <li>Identidad digital</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Citas Clave -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-semibold text-center mb-8 text-secondary">Citas Fundamentales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="quote-box fade-in-up">
+                        <p class="quote-text">
+                            "Lo familiar, por ser familiar, no es conocido. En el proceso del conocimiento, la manera más habitual de engañarse a sí mismo y de engañar a otros es presuponer algo como familiar y dejarlo tal cual."
+                        </p>
+                        <p class="quote-author">— Hegel, Prefacio a la Fenomenología</p>
+                    </div>
+
+                    <div class="quote-box fade-in-up stagger-1">
+                        <p class="quote-text">
+                            "El verdadero ser del hombre es su acción. En ella la individualidad es real, y es la individualidad que supera su ser-para-sí para darse un ser, o se convierte en ser para darse una base firme."
+                        </p>
+                        <p class="quote-author">— Hegel, Fenomenología §590</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Recursos Académicos</h3>
+                    <ul class="text-blue-100">
+                        <li class="mb-2">• 285 papers académicos analizados</li>
+                        <li class="mb-2">• Cobertura temporal: 1950-2024</li>
+                        <li class="mb-2">• 4 escuelas interpretativas principales</li>
+                        <li class="mb-2">• Referencias verificadas y actualizadas</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Navegación</h3>
+                    <ul class="text-blue-100">
+                        <li class="mb-2"><a href="#contexto" class="hover:text-gold">Contexto Histórico</a></li>
+                        <li class="mb-2"><a href="#estructura" class="hover:text-gold">Estructura Dialéctica</a></li>
+                        <li class="mb-2"><a href="#conceptos" class="hover:text-gold">Conceptos Clave</a></li>
+                        <li class="mb-2"><a href="#interpretaciones" class="hover:text-gold">Interpretaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Georg Wilhelm Friedrich Hegel</h3>
+                    <p class="text-blue-100 mb-4">
+                        Exploración académica completa del pensamiento hegeliano y su influencia en la filosofía contemporánea.
+                    </p>
+                    <a href="index.html" class="btn btn-outline">← Volver a la página principal</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-blue-100">
+                <p>&copy; 2024 Página Académica G.W.F. Hegel. Investigación académica rigurosa basada en fuentes especializadas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Sistema de navegación por niveles
+        const levelCards = document.querySelectorAll('.level-card');
+        const levelDetails = document.querySelectorAll('.level-detail');
+
+        levelCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const level = this.dataset.level;
+                
+                // Remover clase active de todas las tarjetas
+                levelCards.forEach(c => c.classList.remove('active'));
+                levelDetails.forEach(d => d.classList.remove('active'));
+                
+                // Añadir clase active a la tarjeta clickeada
+                this.classList.add('active');
+                
+                // Mostrar el contenido correspondiente
+                const targetDetail = document.querySelector(`.level-detail[data-level="${level}"]`);
+                if (targetDetail) {
+                    targetDetail.classList.add('active');
+                }
+            });
+        });
+
+        // Sistema de acordeón
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+            
+            header.classList.toggle('active');
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animación
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Efecto parallax sutil en hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Resaltar navegación activa
+        window.addEventListener('scroll', () => {
+            const sections = ['contexto', 'estructura', 'conceptos', 'interpretaciones', 'legado'];
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        currentSection = section;
+                    }
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 26px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div>
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.io/agent', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+</body>
+</html>
